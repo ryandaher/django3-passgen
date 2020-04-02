@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<div class="container text-center">
+
+<h2>This is the new homepage</h2>
+
+<form action="{% url 'password' %}">
+  <select name="length">
+    <option value="5">5 Chars</option>
+    <option value='6'>6 Chars</option>
+    <option value="7" selected='selected'>7 Chars</option>
+    <option value="8">8 Chars</option>
+    <option value='9'>9 Chars</option>
+    <option value="10">10 Chars</option>
+  </select> Length
+  <br>
+  <input type="checkbox" name="uppercase">Uppercase
+  <br>
+  <input type="checkbox" name="numbers">Numbers
+  <br>
+  <input type="checkbox" name="special">Special Chars
+  <br>
+  <input type="submit" value="Submit Here!" class='btn btn-primary'>
+<br>
+<br>
+<a href="{% url 'about' %}">About Me!</a>
+</form>
+</div>
